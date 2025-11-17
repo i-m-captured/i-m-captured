@@ -79,8 +79,21 @@
 
     /* SECTION STYLING */
     .section { padding: 60px 20px; max-width: 1100px; margin: auto; }
-    .three-photos, .three-bottom { display: flex; gap: 10px; }
-    .three-photos img, .three-bottom img { width: 33.33%; height: 550px; object-fit: contain; }
+
+    /* GALLERY SECTIONS */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 5px;
+    }
 
     /* SERVICES */
     #services h2 { text-align: center; margin-bottom: 30px; }
@@ -142,10 +155,10 @@
 
     /* MOBILE */
     @media (max-width: 800px) {
-      .three-photos, .three-bottom { flex-direction: column; }
       .two-columns { flex-direction: column; }
       .two-columns a { width: 100%; }
       .hero { height: 50vh; }
+      .gallery { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -191,10 +204,11 @@
     <h3>What we capture</h3>
     <p>At I M Captured, we offer a wide range of photography services designed to bring your vision to life. From heartfelt weddings and family portraits to creative lifestyle and event photography, we aim to capture every moment with authenticity and artistic flair. We also work closely with businesses and brands, providing professional product, branding, and corporate photography that helps showcase their story, services, and identity in the best possible light.</p>
 
-    <div class="three-photos">
-      <img src="p100.jpg">
-      <img src="p200.jpg">
-      <img src="p300.jpg">
+    <!-- TOP 3 PHOTOS GALLERY -->
+    <div class="gallery">
+      <img src="p100.jpg" alt="Photo 1">
+      <img src="p200.jpg" alt="Photo 2">
+      <img src="p300.jpg" alt="Photo 3">
     </div>
   </section>
 
@@ -223,7 +237,7 @@
       <div><h3>Portraits</h3><p>R500.00 for 40–60 edited photos</p></div>
       <div><h3>Couples</h3><p>R550.00 for 40–60 edited photos</p></div>
       <div><h3>Events / Groups</h3><p>Request a custom quote. Pricing depends on date, duration, location & deliverables.</p></div>
-      <div><h3>Editing</h3><p>R70 for 10 edited photos.R100 for 20 edited photos.R140 for 30 edited photos.R200 for 50 edited photos.Get a qoute for 60+ photos.</p></div>
+      <div><h3>Editing</h3><p>R70 for 10 edited photos. R100 for 20. R140 for 30. R200 for 50. Custom quotes for 60+ photos.</p></div>
       <div><h3>Business/Product</h3><p>Request a custom quote. Pricing depends on date, duration, location & deliverables.</p></div>
     </div>
 
@@ -252,12 +266,12 @@
     </form>
   </section>
 
-  <!-- BOTTOM PHOTOS -->
+  <!-- BOTTOM 3 PHOTOS GALLERY -->
   <section class="section">
-    <div class="three-bottom">
-      <img src="b1.jpg">
-      <img src="b2.jpg">
-      <img src="b3.jpg">
+    <div class="gallery" style="justify-items: end;">
+      <img src="b1.jpg" alt="Bottom Photo 1">
+      <img src="b2.jpg" alt="Bottom Photo 2">
+      <img src="b3.jpg" alt="Bottom Photo 3">
     </div>
   </section>
 
