@@ -6,12 +6,41 @@
   <title>Testimonials – I M Captured</title>
   <style>
     body { margin: 0; font-family: Arial, sans-serif; background: #4b2e1e; color: #f5f5f5; }
-    header { display: flex; justify-content: center; align-items: center; padding: 20px; background: #3a2417; position: relative; }
-    nav { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); }
-    nav.right { left: auto; right: 20px; }
-    nav a { margin: 0 10px; color: #f5f5f5; text-decoration: none; font-weight: bold; }
-    h1 { margin: 0; font-size: 28px; }
-    .section { padding: 60px 20px; max-width: 900px; margin: auto; }
+
+    /* HEADER */
+    header {
+      text-align: center;
+      padding: 20px;
+      background: #3a2417;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    /* NAVIGATION BAR BELOW HEADER */
+    .nav-bar {
+      text-align: center;
+      background: #3a2417;
+      padding: 10px 0;
+      border-top: 2px solid #2a1911;
+      border-bottom: 2px solid #2a1911;
+    }
+
+    .nav-bar a {
+      margin: 0 15px;
+      color: #f5f5f5;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 17px;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
 
     .testimonial {
       background: #3a2417;
@@ -21,64 +50,70 @@
       line-height: 1.6;
     }
 
-    footer { text-align: center; padding: 20px; background: #2a1911; margin-top: 40px; }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2a1911;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 800px) {
+      .testimonial { padding: 15px; }
+    }
   </style>
 </head>
 <body>
 
-<header>
-  <nav>
-    <a href="index.html">Home</a>
+  <!-- HEADER -->
+  <header>
+    <h1>I M CAPTURED</h1>
+  </header>
+
+  <!-- NAVIGATION BAR BELOW HEADER -->
+  <div class="nav-bar">
+    <a href="index.html#home">Home</a>
+    <a href="index.html#about">About</a>
     <a href="portfolio.html">Portfolio</a>
-  </nav>
-
-  <h1>I M CAPTURED</h1>
-
-  <nav class="right">
-    <a href="#testimonials">Testimonials</a>
+    <a href="index.html#services">Services</a>
+    <a href="testimonials.html">Testimonials</a>
     <a href="index.html#contact">Contact</a>
-  </nav>
-</header>
+  </div>
 
-<section id="testimonials" class="section">
-  <h2 style="text-align:center;">Testimonials</h2>
-  <p style="text-align:center;">What our clients say about their experience with I M Captured.</p>
+  <!-- TESTIMONIALS SECTION -->
+  <section id="testimonials" class="section">
+    <h2 style="text-align:center;">Testimonials</h2>
+    <p style="text-align:center;">What our clients say about their experience with I M Captured.</p>
 
-  <div class="testimonial">
-    <p>IM Captured
+    <div class="testimonial">
+      <p>"IM Captured
 5/5 Stars Review
-Me and my bestie just had the best photoshoot ever with IM Captured  They made us feel like the most beautiful people on earth with every photo they took. They were soooo friendly and made us feel very comfortable. We could be our silly and goofy selfs, with them capturing every moment, even the serious ones too. 
+Me and my bestie just had the best photoshoot ever with IM Captured. They made us feel like the most beautiful people on earth with every photo they took. They were soooo friendly and made us feel very comfortable. We could be our silly and goofy selfs, with them capturing every moment, even the serious ones too. 
 I am extremely happy with the quality and look of the photos. They know exactly how to catch the vibes and angles that make you look and feel great! 
 Their communication was smooth from the start to the end and they even spoiled us with a sweet treat, a photo frame and a written letter each. That extra touch made it unforgettable.
-I will definitely recommend IM Captured to anyone! They are super affordable and walk the extra mile for you! And of course their photos do not disappoint! I loved supporting a local business! I am excited to work with them again!
-</p>
-    <strong>- Sherilee and Michelle</strong>
-  </div>
+I will definitely recommend IM Captured to anyone! They are super affordable and walk the extra mile for you! And of course their photos do not disappoint! I loved supporting a local business! I am excited to work with them again! "
+ </p>
+      <strong>- Sherilee and Michelle</strong>
+    </div>
 
-  <div class="testimonial">
-    <p>“Baie dankie aan i_m_captured vir julle puik diens en ongelooflike werk. Ons sal hierdie herinneringe vir altyd koester en julle beslis aanbeveel aan enige iemand wat opsoek is na professionele, kreatiewe en hartroerende fotografie.”</p>
-    <strong>- Bianca and Brian
+    <div class="testimonial">
+      <p>“Baie dankie aan i_m_captured vir julle puik diens en ongelooflike werk. Ons sal hierdie herinneringe vir altyd koester en julle beslis aanbeveel aan enige iemand wat opsoek is na professionele, kreatiewe en hartroerende fotografie. ”</p>
+      <strong>- Bianca and Brian</strong>
+    </div>
 
-</strong>
-  </div>
+    <div class="testimonial">
+      <p>“We recently had the pleasure of working with I'm Captured, and we were very pleased with the experience! From the first moment, they made us feel completely comfortable and at ease in front of the camera. The shoot was fun, relaxed, and full of laughter.We were quite impressed with the final product of the photos and just want to take this moment to thank I'm Captured. Mariska and Izané have managed to capture the special moments and to bring out the best in every shot. We will definitely treasure these photos for years to come!”</p>
+      <strong>- Zandri and Trevor</strong>
+    </div>
 
-  <div class="testimonial">
-    <p>“We recently had the pleasure of working with I'm Captured, and we were very pleased with the experience! From the first moment, they made us feel completely comfortable and at ease in front of the camera. The shoot was fun, relaxed, and full of laughter.
-We were quite impressed with the final product of the photos and just want to take this moment to thank I'm Captured. Mariska and Izané have managed to capture the special moments and to bring out the best in every shot. We will definitely treasure these photos for years to come!
-”</p>
-    <strong>- Zandri and Trevor</strong>
-  </div>
+    <div class="testimonial">
+      <p>“Baie dankie vir sulke mooi fotos, dit het so mooi uitgekom! julle het die mees spesiale oomblik van ons lewe soveel meer spesiaal gemaak. julle vriendelikheid en enthusiasm het ons so gemaklik maak voel voor die kamera. ons het die shoot so baie geniet te danke aan julle en hoe amazing julle is! ons recommend julle vir almal!!!”</p>
+      <strong>- Bradley and Charné</strong>
+    </div>
+  </section>
 
-  <div class="testimonial">
-    <p>“Baie dankie vir sulke mooi fotos, dit het so mooi uitgekom! julle het die mees spesiale oomblik van ons lewe soveel meer spesiaal gemaak. julle vriendelikheid en enthusiasm het ons so gemaklik maak voel voor die kamera. ons het die shoot so baie geniet te danke aan julle en hoe amazing julle is! ons recommend julle vir almal!!!”</p>
-    <strong>- Bradley and Charné</strong>
-  </div>
-
-</section>
-
-<footer>
-  <p>Facebook: I M Captured | Instagram: i_m_captured</p>
-</footer>
+  <footer>
+    <p>Facebook: I M Captured | Instagram: i_m_captured</p>
+  </footer>
 
 </body>
 </html>
