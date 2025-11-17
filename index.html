@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I M Captured</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #4b2e1e; color: #f5f5f5; }
+    header { display: flex; justify-content: center; align-items: center; padding: 20px; background: #3a2417; position: relative; }
+    nav { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); }
+    nav.right { left: auto; right: 20px; }
+    nav a { margin: 0 10px; color: #f5f5f5; text-decoration: none; font-weight: bold; }
+    h1 { margin: 0; font-size: 28px; }
+
+    .book-now { text-align: center; padding: 10px; background: #2a1911; }
+    .book-now a { color: white; text-decoration: none; font-weight: bold; padding: 10px 20px; border: 2px solid white; }
+
+    .hero { width: 100%; height: 80vh; background: url('hero.jpg') center/cover no-repeat; }
+
+    .slogan { text-align: center; padding: 40px 20px; }
+    .btn-portfolio { display: block; margin: 20px auto; width: fit-content; padding: 10px 20px; border: 2px solid white; color: white; text-decoration: none; }
+
+    .section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+    .three-photos { display: flex; gap: 10px; }
+    .three-photos img { width: 33.33%; height: 250px; object-fit: cover; }
+
+    /* SERVICES & PRICING STYLES */
+    #services h2 {
+      text-align: center; /* center heading */
+      margin-bottom: 30px;
+    }
+
+    #services ul {
+      text-align: center; /* center list */
+      list-style: none;
+      padding: 0;
+      margin-bottom: 40px;
+    }
+
+    .five-columns {
+      display: flex;
+      justify-content: center; /* center the service boxes horizontally */
+      gap: 20px;
+      text-align: center;
+      flex-wrap: wrap; /* stack on smaller screens */
+      margin-top: 0;
+    }
+
+    .five-columns div {
+      width: 250px; /* fixed width for each service box */
+      background: #3a2417;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .two-columns { display: flex; gap: 20px; justify-content: center; margin-top: 40px; }
+    .two-columns a { display: block; width: 320px; background: #3a2417; padding: 20px; border-radius: 10px; text-decoration: none; color: #f5f5f5; font-weight: bold; text-align: center; }
+
+    footer { text-align: center; padding: 20px; background: #2a1911; margin-top: 40px; }
+
+    .three-bottom { display: flex; gap: 10px; margin-top: 40px; }
+    .three-bottom img { width: 33.33%; height: 250px; object-fit: cover; }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    form button {
+      padding: 10px 20px;
+      background: #2a1911;
+      border: 2px solid white;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 800px) {
+      .three-photos, .three-bottom { flex-direction: column; }
+    .three-bottom img {
+  width: 33.33%;   /* keeps three images in a row */
+  height: auto;    /* auto height to keep full image */
+  object-fit: none; /* don’t crop */
+}
+
+      .two-columns { flex-direction: column; }
+      .two-columns a { width: 100%; }
+      .hero { height: 50vh; }
+      .three-columns { flex-direction: column; }
+      .three-columns div { width: 100%; margin-bottom: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="portfolio.html">Portfolio</a>
+  </nav>
+
+  <h1>I M CAPTURED</h1>
+
+  <nav class="right">
+    <a href="#services">Services</a>
+    <a href="testimonials.html">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="book-now"><a href="#contact">BOOK NOW</a></div>
+
+<div class="hero"></div>
+
+<div class="slogan">
+  <h2>Captured with beauty and purpose</h2>
+  <p>Capturing moments that last forever</p>
+  <a class="btn-portfolio" href="portfolio.html">View Portfolio</a>
+</div>
+
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>Hi, I’m Mariska, a teacher and passionate photographer, and one of the hearts behind I M Captured. I M Captured is created to tell stories through beautiful, authentic imagery. My background in teaching has shaped the way I connect with people — with patience, creativity, and heart. Every session is a chance to capture life’s moments with purpose and emotion, creating memories that last a lifetime.</p>
+
+  <h3>Why choose I M Captured</h3>
+  <p>At I M Captured, we believe every moment tells a story worth preserving. Our passion lies in capturing authentic emotion — the laughter, the details, and the in-between moments that make each occasion unique. Whether it’s a wedding, family shoot, event, or creative project, we combine artistic vision with professional precision to deliver timeless, high-quality images that truly reflect your story. With a focus on beauty, purpose, and personal connection, I M Captured isn’t just about taking photos — it’s about creating memories you’ll treasure forever.</p>
+
+  <h3>What we capture</h3>
+  <p>At I M Captured, we offer a wide range of photography services designed to bring your vision to life. From heartfelt weddings and family portraits to creative lifestyle and event photography, we aim to capture every moment with authenticity and artistic flair. We also work closely with businesses and brands, providing professional product, branding, and corporate photography that helps showcase their story, services, and identity in the best possible light.</p>
+
+  <div class="three-photos">
+    <img src="p100.jpg" alt="Photo 1" />
+    <img src="p200.jpg" alt="Photo 2" />
+    <img src="p300.jpg" alt="Photo 3" />
+  </div>
+</section>
+
+<!-- MID SECTION - Portfolio / Testimonials Tiles FIRST -->
+<section id="mid" class="section">
+  <div class="two-columns">
+    <a href="portfolio.html">Portfolio</a>
+    <a href="testimonials.html">Testimonials</a>
+  </div>
+</section>
+
+<!-- SERVICES & PRICING CENTERED -->
+<section id="services" class="section">
+  <h2>Services & Pricing</h2>
+  <ul>
+    <li>Portraits</li>
+    <li>Couples</li>
+    <li>Events</li>
+    <li>Groups</li>
+    <li>Business & Branding</li>
+    <li>Product</li>
+    <li>Editing</li>
+  </ul>
+
+  <div class="five-columns">
+    <div><h3>Portraits</h3><p>R500.00 for 40–60 edited photos</p></div>
+    <div><h3>Couples</h3><p>R550.00 for 40–60 edited photos</p></div>
+    <div><h3>Events / Groups</h3><p>Request a custom quote. Pricing depends on date, duration, location & deliverables.</p></div>
+     <div><h3>Editing</h3><p>R70 for 10 edited photos.R100 for 20 edited photos.R140 for 30 edited photos.R200 for 50 edited photos.Get a qoute for 60+ photos.</p></div>
+     <div><h3>Business/Product</h3><p>Request a custom quote. Pricing depends on date, duration, location & deliverables.</p></div>
+  </div>
+  <p style="text-align:center; margin-top:20px;">Travel cost depends on distance.</p>
+</section>
+
+<section id="contact" class="section">
+  <h2>Contact & Booking</h2>
+  <p>Email: imcaptured1@gmail.com</p>
+
+  <iframe src="https://calendly.com/imcaptured1/30min?month=2025-11" width="100%" height="600"></iframe>
+
+  <h3 style="text-align:center; margin-top:40px;">Send a Message/Get a Quote</h3>
+
+  <!-- FORMSPREE FORM (working) -->
+  <form action="https://formspree.io/f/xrbrjvob" method="POST" style="max-width:600px; margin:auto;">
+    
+    <label>Your Name:</label>
+    <input type="text" name="name" required>
+
+    <label>Your Email:</label>
+    <input type="email" name="email" required>
+
+    <label>Phone Number:</label>
+    <input type="text" name="phone">
+
+    <label>Your Message:</label>
+    <textarea name="message" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+<section class="section">
+  <div class="three-bottom">
+    <img src="b1.jpg" alt="Bottom 1" />
+    <img src="b2.jpg" alt="Bottom 2" />
+    <img src="b3.jpg" alt="Bottom 3" />
+  </div>
+</section>
+
+<footer>
+  <p>Facebook: I M Captured | Instagram: i_m_captured</p>
+</footer>
+
+</body>
+</html>
